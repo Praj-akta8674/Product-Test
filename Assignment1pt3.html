@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG'S SHOP FEEDBACK</title>
+    <style>
+        div{
+            font-size: larger;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+    <script>
+        function validateForm() {
+            var firstName = document.querySelector('.Names').value;
+            var regex = /[\s]/g; // Regular expression to check for whitespace
+            if (regex.test(firstName)) {
+                alert("First name cannot contain spaces or SQL commands!");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission if validation passes
+        }
+    </script>
+</head>
+<body>
+    <center> 
+        <h1>WELCOME TO THE FEEDBACK FORM</h1>
+        <div><br><br>
+            <form action="#" method="post" onsubmit="return validateForm()" style="width: 80%; margin: 0 auto; padding: 20px; border: 2px solid sienna; border-radius: 10px;">
+                First name:<br>
+                <input type="text" class="Names"><br><br>
+                Last name:<br>
+                <input type="text"><br><br>
+                Phone number:<br>
+                <input type="number" name="Num"><br><br>
+                <label for="dob">DATE OF BIRTH:</label><br>
+                <input type="date" name="dob"><br><br>
+                Email ID:<br>
+                <input type="email" class="mails"><br><br>
+                <label for="gender">GENDER:</label><br>
+                <input type="radio" name="gender" value="Male"> Male<br>
+                <input type="radio" name="gender" value="Female"> Female<br>
+                <input type="radio" name="gender" value="Other"> Other<br><br>
+                <label for="feedback">Feedback:</label><br><br>
+                <textarea id="feedback"></textarea><br><br>
+                <input type="submit" class="clicks">
+                <br><br>
+            </form>
+        </div> 
+    </center>
+</body>
+</html>

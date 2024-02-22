@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG'S COFFEE SHOP HOME PAGE</title>
+
+    <style>
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* div{
+            padding: 20px; 
+            background-color:sienna; 
+            color: azure;
+        } */
+
+        #this{
+            padding: 30px; 
+            background-color:rgb(175, 125, 38); 
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style=" padding: 20px; background-color:sienna; color: azure;">&#x2764;WELCOME TO PG'S COFFEE SHOP &#x2764;</h1><br>
+        <!-- <marquee direction="right" style="font-size: x-large;">Welcome to the website</marquee> -->
+    <img src="cafe.jfif" width="900px" height="600px" style="margin-bottom: 1cm;" >
+    <div>
+        <u><h1>ABOUT US</h1></u>
+        <p style="font-size: x-large; font-family: Arial, Helvetica, sans-serif;">
+            PG's Coffee Shop is a cozy and welcoming café that offers a delightful coffee experience. <br>
+            Our expert baristas are dedicated to crafting the perfect cup of coffee, using premium beans sourced from around the world. <br>
+            Our inviting ambiance and comfortable seating make it the perfect spot to relax, catch up with friends, or simply enjoy some alone time.
+        </p>
+    
+        <br>
+        <u><h1>FEATURED COFFEES</h1></u>
+        <table style="width: 40%;  ">
+            <tr style="background-color: sienna; color: azure;">
+                <th style=" border: 1px solid azure;">Coffee Name</th>
+                <th style=" border: 1px solid azure;">Origin</th>
+                <th style=" border: 1px solid azure;">Tasting Notes</th>
+            </tr>
+            <tr style="background-color: rgb(255, 255, 255); color: sienna;">
+                <td style=" border: 1px solid sienna;">Ethiopian Yirgacheffe</td>
+                <td style=" border: 1px solid sienna;">Ethiopia</td>
+                <td style=" border: 1px solid sienna;">Floral, Citrus, Berry</td>
+            </tr>
+            <tr style="background-color: rgb(255, 255, 255); color: sienna;">
+                <td style=" border: 1px solid sienna;">Colombian Supremo</td>
+                <td style=" border: 1px solid sienna;">Colombia</td>
+                <td style=" border: 1px solid sienna;">Chocolate, Caramel, Nutty</td>
+            </tr>
+            <tr style="background-color: rgb(255, 255, 255); color: sienna;">
+                <td style=" border: 1px solid sienna;">Sumatra Mandheling</td>
+                <td style=" border: 1px solid sienna;">Indonesia</td>
+                <td style=" border: 1px solid sienna;">Earthy, Herbal, Complex</td>
+            </tr>
+        </table>
+    </div>
+    
+    <p style="font-size: xx-large; color: black;">Let us dive into the WORLD'S BEST COFFEE&#x2615;</p>
+<div id="this">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file-upload" style="font-size: xx-large;">Upload JPG file:</label>
+        <input type="file" id="file-upload" name="file-upload" accept="image/jpeg">
+        <br><br>
+        <input type="submit" value="Upload" style="font-size: xx-large;">
+    </form>
+    <br><br>
+    <a href="Assignment1pt2.html" target="_blank" style="font-size: xx-large;"  >ORDER NOW</a>
+    <br><br>
+    <a href="Assignment1pt3.html" target="blank" style="font-size: xx-large;"  >GIVE US FEEDBACK</a>
+</div></center>
+</body>
+</html>
